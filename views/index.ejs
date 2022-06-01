@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <center><h2>Banco de Dados</h2>
+    <h3>Coleção de documentos que descrevem usuários de uma rede social</h3></center>
+    
+    <center>
+    <table border="1">
+    <tr>
+        <th>Descrição</th>
+        <th>Fazer pesquisa</th>
+    </tr>
+    <tr>
+    <td><p>Listar todos os Usuários.</p></td>
+    <td><form action="/todos" method="get">
+        <center><button>Buscar</button></center>
+    </form></td>
+    </tr>
+
+    <tr>
+        <td><p> Listar documentos dos usuários com 31 anos.</p></td>
+        <td><form action="/31anos" method="get">
+        <center><button>Buscar</button></center> 
+   
+    </form></td>
+    </tr>
+
+    <tr>
+        <td><p> Listar dos usuários com 31 anos.</p></td>
+        <td><form action="/useronlyname" method="get">
+        <center><button>Buscar</button></center>
+    </form></td>
+    </tr>
+
+    <tr>
+         <td><p> Listar documentos cujos nomes comecam com "ma". </p></td>
+        <td><form action="/com_ma" method="get">
+        <center><button>Buscar</button></center> 
+    </form></td>
+    </tr>
+
+    <tr>
+        <td><p> Listar documentos cujos nomes comecam com "ma" e terminam com "l". </p></td>
+        <td><form action="/com_ma_ter_l" method="get">
+        <center><button>Buscar</button></center> 
+    </form>
+    </tr></td>
+
+    <tr>
+        <td><p> Listar os usuários que tem interesse em "musica".</p>
+        <td><form action="/musica" method="get" class="mongo">
+        <center><button>Buscar</button></center>
+    </form></td>
+    </tr>
+
+    <tr>
+        <td><p>Qual o numero de usuários?</p></td>
+        <td> <form action="/todoss" method="get">
+        <center><button>Buscar</button></center> 
+    </form></td>
+    </tr>
+
+    <tr>
+        <td><p> Pessoas que apresentaram interesses</p></td>
+        <td><form action="/withinteresse" method="get">
+        <center><button>Buscar</button></center> 
+    </form></td>
+    </tr>
+
+    </table>
+</center>
+<p>Projeto Criado por Alex Ferreira Joaquim Junior</p>
+<p>PUC Minas Poços de Caldas</p>
+    
+    <br>
+</body>
+</html>

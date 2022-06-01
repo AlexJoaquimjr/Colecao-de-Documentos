@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+        border: 1px solid rgb(255, 52, 1);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Resultado da busca</h1>
+    <table>
+        <tr>
+            <th> Nome</th>
+            <th> Idade</th>
+            <th> Status</th>
+            <th> Interesses do usuário</th>
+        </tr>
+        <% Users.forEach( user => { %>
+        <tr>
+            <td><%=user.nome%></td>
+            <td> <%=user.idade%></td>
+            <td> <%=user.status%></td>
+            <td>
+            <% user.interesses.forEach( interesse => { %>
+                 <span>| <%= interesse.name %> </span>
+                <% }) %>
+            </td>
+        </tr>
+        <%})%>
+
+    </table>
+</center>
+
+
+    <button  onclick='window.history.back()'> Voltar a pagina inicial</button>
+        
+    
+</body>
+</html>
